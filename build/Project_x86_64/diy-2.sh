@@ -14,7 +14,7 @@ sed -i "/uci commit network/i\uci set network.lan.delegate='0'" $ZZZ            
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile   # 强制选择argon为默认主题选项
 sed -i "/uci commit luci/i\uci set luci.main.mediaurlbase=/luci-static/argon" $ZZZ        # 选择argon为默认主题
 
-sed -i "/uci commit system/i\uci set system.@system[0].hostname='sunny-119'" $ZZZ       # 修改主机名称为OpenWrt-123
+sed -i "/uci commit system/i\uci set system.@system[0].hostname='Sunny-119'" $ZZZ       # 修改主机名称为OpenWrt-123
 
 sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ                                                    # 设置密码为空
 
